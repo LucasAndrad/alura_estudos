@@ -8,6 +8,14 @@ class Book
 		@has_redefinition = has_redefinition
 	end
 	
+	def cheap
+		"The book #{@title} is only R$ #{@price}\nFrom: #{@year}\n\n"
+	end
+	
+	def expensive
+		"Title: #{@title}\nPrice: R$ #{@price} From: #{@year}\n\n"
+	end
+	
 	private
 	
 		def calc(p)
@@ -29,7 +37,7 @@ end
 
 class Stock
 	attr_reader :books
-
+	
 	def initialize
 		@books = []
 	end
@@ -37,7 +45,7 @@ class Stock
 	def cheaper_than(value)
 		@books.select do |b|
 			if b.price <= value
-				puts "The book #{b.title} is only R$ #{b.price}\nFrom: #{b.year}\n\n"
+				puts b.cheap
 			else
 			end
 		end
@@ -46,14 +54,14 @@ class Stock
 	def expensive_than(value)
 		@books.select do |b|
 			if b.price >= value
-				puts "Title: #{b.title}\nPrice: R$ #{b.price} From: #{b.year}\n\n"
+				puts b.expensive
 			else
 			end
 		end 
 	end
 	
 	def total
-		@books.size
+		puts "Total of books in stock = #{@books.size}"
 	end
 	
 	def add(book)
@@ -67,10 +75,13 @@ math = Book.new('Math 1', 100, 1998, true)
 html_book = Book.new('HTML 5', 100, 2009, true)
 
 stock = Stock.new
-stock.books << rails_book << math << html_book
-stock.books << Book.new('Java', 140, 1999, true)
-stock.books << Book.new('Phyton', 40, 2008, false)
+stock.add rails_book 
+stock.add math 
+stock.add html_book
+stock.add Book.new('Java', 140, 1999, true)
+stock.add Book.new('Phyton', 40, 2008, false)
+stock.add nil
 
-
-stock.cheaper_than(89)
-stock.expensive_than(100)
+stock.cheaper_than(10)
+stock.expensive_than(101)
+stock.total

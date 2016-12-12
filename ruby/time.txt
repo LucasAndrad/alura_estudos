@@ -1,3 +1,4 @@
 Tempo
 Curso ruby OO
 Primeiro módulo - 1 hora
+Segundo módulo - 3 horas
