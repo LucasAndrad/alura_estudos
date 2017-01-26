@@ -14,10 +14,14 @@ class NegociacaoController {
 
 
 	add(event) {
+
 		event.preventDefault();
 
+		let date = new Date(...this._dateField.value.split('-')
+			.map((iten, count) => iten - count % 2 ));
+
 		let negociation = new Negociacao(
-			this._dateField.value,
+			date,
 			this._quantityField.value,
 			this._valueField.value
 		);
