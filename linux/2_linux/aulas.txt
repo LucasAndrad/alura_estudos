@@ -1,0 +1,89 @@
+Curso 2 Linux Programas, processos e pacotes:
+Lucas Andrade Oliveira
+------------------------------------------------------------------------
+
+Aula 2: 	
+ps -e // lista os programas abertos
+kill nome/id // kill seguido do nome do programa ou do id mata aquele programa, ou seja, finaliza o mesmo.
+ps -ef // lista os programas com mais detalhes
+ps -ef | grep firefox // lista todos os programas abertos com o nome firefox, o grep é filtro de busca
+cat arquivo.txt | grep Cidade // com o grep cidade temos um filtro de busca, então o cat só vai exibir as linhas que possuem a palavra cidade no texto.
+killall firefox // mata todos os programas que possuem firefox no nome.
+kill all -9 firefox // é um killall forçado.
+------------------------------------------------------------------------
+
+Aula 3:
+ctrl Z // pausa os programas que estão rodando
+jobs // lista os programas que estão pausados
+bg 1 // coloca o programa com id 1 para rodar em background(bg), assim o terminal fica livre para uso
+firefox & // o & perminte já abrir o programa no background
+------------------------------------------------------------------------
+
+Aula 4: Scripts
+Para criar um script basta criar um arquivo sem extensão nenhuma:
+gedit programa &
+sh programa // para executar
+chmod +x programa // chmod == change mode, +x adiciona a permissão para executar o script com o ./programa
+------------------------------------------------------------------------
+
+Aula 5: 
+locate arquivo.txt // Localizar um arquivo
+sudo updatedb // atualiza os arquivos monitorados pelo linux
+------------------------------------------------------------------------
+
+Aula 6:
+Ao criar um arquivo, tipo o arquivo dorme. Para utiliza-lo usando apenas o nome do arquivo é necessário coloca-lo no diretorio usr/bin
+------------------------------------------------------------------------
+
+Aula 7: Trocando usuários e suas permissões pelo terminal.
+Não vai ser muito útil então não precisa anotar
+------------------------------------------------------------------------
+
+Aula 8: Adicionando um PATH para um arquivo.
+Também não vai ser mt útil.
+------------------------------------------------------------------------
+
+Aula 9: Instalando e removendo programas
+sudo apt-get update // atualiza a lista de programas disponíveis para download, ou seja, ao realizar o download de algum programa da lista ele estará na versão mais atual.
+apt-cache search (nome do programa) mysql-sever // busca os programas disponíveis para instalação, no exemplo do mysql-server, todos os programas que possuem mysql-sever no nome.
+------------------------------------------------------------------------
+
+Aula 10: Instalando e desinstalando programas .deb
+Para instalar um programa:
+1º Fazer o download do programa .deb
+2º no terminal: sudo dpkg -i programa.deb // -i se refere a instalar
+
+Para desinstalar:
+1º no terminal: sudo dpkg -r programa.deb // -r se refere a remove
+------------------------------------------------------------------------
+
+Aula 11: Iniciando e pausando servidor pelo terminal
+Não vai ser muito útil
+------------------------------------------------------------------------
+
+Aula 12: Instalação a partir do código fonte
+Quando o programa não possui um arquivo disponível na loja do linux(apt-get) e nem um versão .deb é necessário instalar o código fonte.
+Basta procurar no site, na parte de downloads, os arquivos em Tarballs.
+Esses arquivos estão comprimidos, .zip e .tar basta baixar o de sua preferência
+Dica: arquivos .tar mantém as autorizações originais do arquivo (melhor opção)
+No exemplo da aula o professor baixa o código fonte do git, um código todo em c.
+Programas escritos em c geralmente possui um script chamado configure para instalar as dependências do projeto.
+Para rodar o script basta digitar: ./configure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

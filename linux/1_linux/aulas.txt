@@ -1,0 +1,31 @@
+Curso - Linux 1 conhecendo e utilizando o terminal
+Lucas Andrade Oliveira
+----------------------------------------------------------------------------
+
+Aula 2: Comandos
+rm // remove um arquivo
+rm -r // remove de forma recursiva, serve para deletar uma pasta
+cat arquivo.txt // mostra o conteúdo do arquivo no terminal
+cat *.txt // mostra o conteúdo de todos os arquivos com extensão .txt
+----------------------------------------------------------------------------
+
+Aula 3: Comandos
+echo "Uma mensagem qualquer" > mensagem.txt // echo significa eco, ou seja, vai gravar o conteúdo entre parenteses na saída indica, no caso " > mensagem.txt "
+cp arquivo1.txt arquivo2.txt // copia o conteúdo do arquivo1 no arquivo2, que caso não exista será criado
+cp -r pasta1 ../pasta0 // para copiar todo conteúdo de uma pasta é necessário copiar de maneira recursiva
+----------------------------------------------------------------------------
+
+Aula 4: Comandos de compactação	
+tar -cz diretorio1 > diretorioCompress.tar.gz // Para compactar um diretório, -cz indica que será criado(create) um novo zip.
+tar -xz diretorio > diretorio1 // Descompactar um arquivo, o "x" significa extract
+----------------------------------------------------------------------------
+
+Aula 5: Comandos para ler e editar arquivos
+Para editar arquivos podemos utilizar o vi
+vi arquivo.txt
+Dentro do editor para apagar linhas basta digitar o número de linhas e apertar "dd"
+Apagar caracteres "x" e "10x" apaga 10 caracteres
+Para pesquisar dentro do editar basta digitar "/palavra desejada"
+Uma outra forma de apenas ler um arquivo no terminal é utilizar o comando "less arquivo.txt"
+Esse comando vai abrir o arquivo no terminal apenas para leitura.
+
