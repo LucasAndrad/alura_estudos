@@ -10,6 +10,8 @@ class NegociacaoController {
 		this._dateField = $('#data');
 		this._quantityField = $('#quantidade');
 		this._valueField = $('#valor');
+
+		this._listNegociations = new ListNegociation();
 	}
 
 
@@ -17,15 +19,29 @@ class NegociacaoController {
 
 		event.preventDefault();
 
-		let date = new Date(...this._dateField.value.split('-')
-			.map((iten, count) => iten - count % 2 ));
+		let negociation = this._createNegociation();
 
-		let negociation = new Negociacao(
+		this._listNegociations.add(negociation);
+		console.log(this._listNegociations._negociations);
+
+		this._clearForm();
+	}
+
+	_createNegociation() {
+
+		let date = DateHelper.textFormat(this._dateField.value);
+
+		return new Negociacao (
 			date,
 			this._quantityField.value,
 			this._valueField.value
 		);
+	}
 
-		console.log(negociation);	
+	_clearForm() {
+		this._dateField.value = '';
+		this._dateField.focus();
+		this._quantityField.value = 1;
+		this._valueField.value = 0.0;
 	}
 }

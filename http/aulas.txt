@@ -1,0 +1,4 @@
+Aula 1 e 2
+Ideia de cliente e servidor. O alura é o sevidor e o navegador mozila firefox (ou chrome etc) é o cliente.
+O http é o protocolo da web. Existem milhares de protocolos, mas o http é o mais famoso e o mais usado.
+
