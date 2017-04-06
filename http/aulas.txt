@@ -54,3 +54,12 @@ Basicamente se dividem assim:
 
 500 e derivados
 5** Erro do servidor (o servidor falhou)
+
+Aula 6
+
+Http outros métodos.
+Além do método GET temos também o método POST e muitos outros mais. Vamos falar mais do POST pois ele é bastante comum.
+O método GET serve para iniciar uma comunicação passando os dados necessários pela url.
+Entretanto ele não é interessante quando temos que passar dados confidenciais, como a senha do nosso login por exemplo.
+Ai entra o método POST que passa informações para o servidor sem usar a url.
+Algumas pessoas dizem que o método POST é usado quando é necessário modificar alguma coisa no servidor (database por exemplo), entretanto o método POST serve para mascarar informações que devem ser passadas ao servidor em sigilo.
