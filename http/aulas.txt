@@ -1,4 +1,56 @@
 Aula 1 e 2
+
 Ideia de cliente e servidor. O alura é o sevidor e o navegador mozila firefox (ou chrome etc) é o cliente.
 O http é o protocolo da web. Existem milhares de protocolos, mas o http é o mais famoso e o mais usado.
 
+Entre a comunicação cliente servidor existe um monte de intermediários. Por exemplo, os dados saem do navegador passam pela wifi, depois pelo roteador, depois pelo servidor de hospedagem até finalmente chegar ao alura em si. Durante todo esse caminho os dados trafegam de forma aberta, ou seja em texto mesmo (inclusive as senhas).
+
+Https, o 's' ao final significa secure(seguro) ou seja, as informações transitam no site de forma segura entre os diversos intermediários.
+
+Para ganhar o título/identidade http com o 's' a final(http) o site presica ser certificado por uma empresa com poder para tal. A empresa garante que o alura é realmente o alura. Então a identidade do alura é confirmada.
+
+A segurança é feita com criptografia, do lado do servidor temos uma chave pública e do lado do cliente temos uma chava privada que o alura conhece essa chava. Assim dados criptografados por uma chava só podem ser descriptografados pela outra chave. Esse processo é segura porém lento. 
+Um processo mais rápido seria ter a mesma chava pública nos dois lados, do cliente e do servidor. Porém novamente os dados estão desprotegidos pois a chave é pública e todos podem ver.
+** melhor parte
+
+Para contornar esse problema o servidor trabalha com as duas chaves. Primeiro assim que o cliente acessa a aplicação é feita uma conexão assimétrica. 1º o servidor gera uma chave pública exclusiva para aquele cliente e depois envia essa chave usando a criptografia da chave privada. Uma vez que o cliente possui uma chave pública exclusiva toda a comunicação seguinte é feita de forma simétrica.
+
+
+Aula 3
+
+Domínios: os domínios são apenas um texto mais fácil para nos humanos acessamos os sites n o internet. Para a web os sites estão nomeados com seu IP, um número único que representa aquele site.
+O que singnifica cada elemento da url.
+https://www.alura.com.br:80/course/introducao-html-css
+https -> Protocolo
+www.alura.com.br -> Domínio
+:80 -> Porta do protocolo
+/course/introducao-html-css -> Recurso do site. É o caminho para alguma coisa.
+
+
+Aula 4
+
+O protocolo http segue o modelo requisição-resposta. Isso quer dizer que o cliente que sempre começa a comunicação com o servidor e nunca o contrário, e o servidor devolve uma resposta ao cliente.
+Todas as requisições são independentes, ou seja, em cada requisição é nessário informar todas as informações referentes aquela página, assim cada requisição fica independente das demais. Por exemplo:
+Ao efetuar um login informamos ao servidor quem é o usuário que está usando o sistema. Porém enquanto o usuário estiver logado e interagindo com o servidor é necessário informar quem é esse usuário em cada interação. É como fazer um login cada vez que o site da upload na página. Porém isso é feito de uma forma um pouco mais inteligente. Depois de logar o servidor gera um sessionId (um id para a nova sessão) que representa o login daquele usuário, ou seja seu login e sua senha. Assim em cada interação o cliente envia o sessionId para o servidor identificar quem é o usuário que está realizando aquela ação.
+
+
+Aula 5
+
+Http método GET e códigos de status.
+O método GET é usado quando quando o cliente solicita informações sem alterar nenhum dado do servidor (não modifica o database).
+Os códigos de status do protocolo http são referentes ao status da comunicação entre as requisições cliente servior. Os status estão descritos nesse site https://httpstatuses.com/
+Basicamente se dividem assim:
+100 e derivados
+1** Informativos
+
+200 e derivados
+2** Sucesso
+
+300 e derivados
+3** Redirecionamento
+
+400 e derivados
+4** Erro do cliente (dados foram passados errados).
+
+500 e derivados
+5** Erro do servidor (o servidor falhou)
