@@ -5,63 +5,134 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap-code/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-	<div class="container">
-		<h2>Sobre Nós</h2>
-		<img class="img-responsive" src="img/empresa.jpg">
-	</div>	
+<section class="container">
+  <h2>Sobre Nós</h2>
+  <img class="img-responsive" src="img/empresa.jpg">
+	
 
-
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingOne">
-        <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Desde 1935
-          </a>
-        </h4>
+  <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Desde 1935
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse off" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            A TopCasaFina Arquitetura está no mercado desde 1935 trazendo uma série de projetos de qualidade para seus clientes e mudando suas vidas para sempre.
+            Nossa empresa construiu o palácio Dionísio para Don Pedro IX que ninguém nunca ouviu falar.
+          </div>
+        </div>	
       </div>
-      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-        <div class="panel-body">
-          A TopCasaFina Arquitetura está no mercado desde 1935 trazendo uma série de projetos de qualidade para seus clientes e mudando suas vidas para sempre.
-          Nossa empresa construiu o palácio Dionísio para Don Pedro IX que ninguém nunca ouviu falar.
-        </div>
-      </div>	
-    </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingTwo">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    Preços acessíveis
-                </a>
-            </h4>
-        </div>
-        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="panel-body">
-                Com projetos a partir de R$ 5.000.000,00 a nossa empresa procura abranger os clientes mais ricos do mundo.
-            </div>
-        </div>
-    </div>
+      <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Preços acessíveis
+                  </a>
+              </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                  Com projetos a partir de R$ 5.000.000,00 a nossa empresa procura abranger os clientes mais ricos do mundo.
+              </div>
+          </div>
+      </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingThree">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                    Alegria em colaborar para um mundo mais bonito
-                </a>
-            </h4>
-        </div>
-        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-            <div class="panel-body">
-                Os projetos da TopCasaFina Arquitetura são sempre acompanhados dos melhores profissionais de decoração para que
-                o produto final fique lindo.
-            </div>
-        </div>
+      <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                      Alegria em colaborar para um mundo mais bonito
+                  </a>
+              </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                  Os projetos da TopCasaFina Arquitetura são sempre acompanhados dos melhores profissionais de decoração para que
+                  o produto final fique lindo.
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <section class="container">
+    <h2>Nossos Projetos</h2>
+    <figure class="thumbnail">
+      <img src="img/casa-castelo.jpg" class="img-responsive" alt="Foto da Casa Castelo" >
+      <figcaption class="caption">
+        <h3>Casa Castelo</h3>
+        <p> A Casa Castelo é o último lançamento da TopCasaFina feita para um monge.</p>
+      </figcaption>
+    </figure>
+  </section>
+
+
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Mais de 300 prêmios em design e em conforto </h3>
+      <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo </p>
     </div>
-</div>
+  </div>
+
+  <h3 class="container titulo-depoimentos">Depoimentos de Clientes</h3>
+
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <figure class="item active">
+        <img src="img/depoimentos/depoimento0.png">
+        <figcaption class="carousel-caption">
+          <h3>Yuri Padilha</h3>
+          <p>Gostei muito e achei rápido o serviço.</p>
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/depoimentos/depoimento1.png">
+        <figcaption class="carousel-caption">
+          <h3>Fernando Stafaneni</h3>
+          <p>Excelente trabalho.</p>  
+        </figcaption>
+      </figure>
+      <figure class="item">
+        <img src="img/depoimentos/depoimento2.png">
+        <figcaption class="carousel-caption">
+          <h3>Caio Sauzas</h3>
+          <p>Gostei, competência em primeiro lugar.</p>
+        </figcaption>
+      </figure>
+
+    </div>
+    
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<section class="container">
+    <h2>Vídeo Institucional</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kJQP7kiw5Fk" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
 </body>
 
 	<script src="js/jquery.js"></script>
