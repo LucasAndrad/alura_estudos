@@ -1,0 +1,18 @@
+Aula 01
+	Iniciando projeto em ionic 2, aprendendo sobre o framework, como funciona e etc. Iniando o projeto com
+	$ ionic start aluraCar tabs
+	Para iniciar o servidor usamos a tag lab para mostrar o app nas 3 plataformas disponíveis
+	$ ionic serve --lab 
+	
+Aula 02
+	Aprendendo como consumir uma API e lidando com erros ao se conectar com ela, aprendi como tratar e mostrar as respostas da API para o usuário, melhorando a usabilidade do mesmo.
+	
+Aula 03
+	Começamos e trabalhar as ações do usuário, aqui ele pode escolher o carro e ver os acessórios do mesmo. Aprendi como usar algums components e tags do Ionic para facilitar no desenvolvimento. As tags do Ionic já vem no formato para IOS e para Android por isso desenvolver o framework fica tão rápido.
+	
+Aula 04
+	Nessa aula criamos métodos para gerenciar a escolha do usuário em tempo real, ao escolher os acessórios do veículo o preço total é atulizado automaticamente, usamos funções como ionChange e conhemos mais sobre a biblioteca do Ionic, tanto para tags como para ícones.
+	
+Aula 05
+	Nessa aula criamos as rotas e a paginação para a página de cadastro do agendamento e também o formulário do mesmo.
+Aula 06
