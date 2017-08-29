@@ -15,4 +15,6 @@ Aula 04
 	
 Aula 05
 	Nessa aula criamos as rotas e a paginação para a página de cadastro do agendamento e também o formulário do mesmo.
+
 Aula 06
+	Aprendemos sobre a navegação usando o navController.push e navController.setRoot. No primeiro as páginas do app são empilhadas assim o usuário pode voltar para a página anterior usando o backbutton e no segundo jeito, o setRoot, esvazia a pilha a manda o usuário para uma página que não possui botão de voltar, geralmente é a página inical do app.
