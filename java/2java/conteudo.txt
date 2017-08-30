@@ -36,4 +36,4 @@ Sobre o java:
 Método throw new RuntimeException("Mensagem de erro aqui"); esse método é usado quando são encontradas condições inválidas no código em excecução, como entradas inválidas, falhas no banco de dados, falha na rede, as vezes um arquivo que não foi encontrado. Tudo isso deve ser tratado para que o usuário tenha um feedback com o programa em tempo de excecução. Por isso temos a mensagem na chamada do RuntimeException.
 
 Try e Catch:
-
+O try tenta pegar o seu código e fazer algo, caso aconteça algum erro ele olha para o catch, no catch vc deve indicar qual o erro que será tratado, ao chegar no catch ele percebe que você tratou aquele erro e mostra o seu "tramento" (geralmente uma mensagem explicando o que aconteceu já é suficiente).
