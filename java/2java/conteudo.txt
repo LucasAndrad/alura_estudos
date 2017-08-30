@@ -1,0 +1,39 @@
+Aula 04 -
+Classe abstrata 
+
+	abstract class Funcionario { }
+
+informa que a classe é abstrata
+
+Método abstrato (deve obrigatóriamente ser implementado pelas classes filhas)
+abstract double getBonus();
+
+OBS: temos apenas a assinatura do método.
+
+
+Aula 05 - 
+Interfaces
+Uma interface permite dizer que quem implementa a mesma tem a obrigação de implementar seus métodos. É como assinar um contrato, na interface temos apenas a declaração do método já as classes que implementam a interface possuem o método implementado. Pode parecer que mas isso deixa o código mais flexível.
+
+As interfaces também representam melhor a orientação a objetos como um todo, como diz Alan Snyder, a herança quebra o encapsulamento, pois para herdar de algum pai, é necessário conhecer o código que o mesmo implementa.
+Leitura recomendada
+http://blog.caelum.com.br/como-nao-aprender-orientacao-a-objetos-heranca/
+
+Outra vantagem das interfaces é que o código fica muito mais fácil para realizar qualquer manutenção. Pois quando usamos interfaces é possível alterar uma classe sem modificar as outras, algo que nem sempre é possível com a herança, pois a classe pai pode por vezes implementar algum método que posteriormente precise ser retirado de uma única classe filha, ou seja, é necessário modificar tanto a classe pai como todas as filhas para chegar ao resultado desejado. Por outro lado com a interface basta mudar a implementação do método na classe desejada.
+
+Pesquisa pessoal:
+Conceitos básicos de orientação a objetos.
+
+Encapsulamento: esconde atributos de uma classe. Só ela pode usá-los ou só ela pode saber que eles existem. É o private
+
+Associação: é quando uma classe se relaciona com outra, uma usa a outra.
+
+Herança: quando uma classe (classe filha) herda de outra classe (classe pai). É possível herdar tanto atributos como métodos.
+
+Polimorfismo: é a capacidade de classe filha implementar o mesmo método da classe pai (método com a mesma assinatura) porém de forma diferente. Ou seja é possível sobrescrever o método e até mesmo aproveitar a parte que já está implementada na classe pai.
+
+Sobre o java:
+Método throw new RuntimeException("Mensagem de erro aqui"); esse método é usado quando são encontradas condições inválidas no código em excecução, como entradas inválidas, falhas no banco de dados, falha na rede, as vezes um arquivo que não foi encontrado. Tudo isso deve ser tratado para que o usuário tenha um feedback com o programa em tempo de excecução. Por isso temos a mensagem na chamada do RuntimeException.
+
+Try e Catch:
+

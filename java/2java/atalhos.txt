@@ -1,0 +1,3 @@
+ctrl + shift + L exibe todos os atalhos do eclipse.
+ctrl + 3 e ai busca por "run" e da enter, roda a main do programa.
+ctrl + shift + F formata o código java.
