@@ -1,0 +1,30 @@
+Aula 02 - JavaDoc e Jar
+
+Jar
+
+Quando mandamos empacotar um código java ele deve ter a extensão do tipo .jar, assim quando alguém for compilar o código basta usar o comando genérico:
+
+java -jar arquivo.jar
+
+Com isso o arquivo main será compilado automaticamente.
+
+
+JavaDoc
+
+Para criar um JavaDoc para o nosso código usando o eclipse basta clicar com o botão direito no projeto e gerar o javaDoc para o projeto.
+A partir disso você começar a documentação colocando os comentários:
+
+/*
+* Descrição da classe
+* Descrição da classe
+* @param
+* @param
+* @param
+* @return
+* @see 
+*/
+
+Aula 03 - Classes lang
+Uma das classes lang, que todas as classes herdam (ou possuem) é a classe Object.
+Classe que podem ser usadas sem import ou algo do tipo:
+String
